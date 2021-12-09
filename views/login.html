@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stysheet" href="/css/normalize.css">
+    <script src="https://kit.fontawesome.com/786450e258.js" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+rel="stylesheet" />
+    </head>
+    <body>
+        <main>
+            <h2 class="title">Iniciar sesion</h2>
+            <form class="user-login" action="/auth/login" method="POST">
+                <label for="user" class="hidden">Ingresa tu nombre</label>
+                <p>
+                    <input
+                        type="text"
+                        name="user"
+                        placeholder="Nombre de usuario"
+                        required
+                    />
+                </p>
+                <label for="password" class="hidden"
+                    >Ingresa tu contraseña</label
+                >
+                <p>
+                    <input
+                        type="password"
+                        name="pass"
+                        placeholder="Contraseña"
+                        required
+                    />
+                </p>
+                <button class="submit" type="submit">Enviar</button>
+            </form>
+        </main>
+    </body>
+</html>
